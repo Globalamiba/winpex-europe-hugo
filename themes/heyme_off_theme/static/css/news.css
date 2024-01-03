@@ -1,0 +1,201 @@
+.news-banner {
+    position: relative;
+}
+
+.news-banner-desc {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgba(255, 255, 255, 1);
+}
+
+.news-banner-img {
+    max-width: 100%;
+    height: 4rem;
+    display: block;
+    object-fit: cover;
+}
+
+.news-banner-desc h2 {
+    font-size: 0.4rem;
+    font-weight: bold;
+}
+
+.news-banner-desc p {
+    font-size: 0.24rem;
+}
+
+.news-content-nav {
+    display: flex;
+    padding: 0.4rem 0;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.1);
+}
+
+.news-content-nav li {
+    cursor: pointer;
+    font-size: 0.24rem;
+    width: 1.5rem;
+    height: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.2rem;
+}
+
+.news-content-nav li.active {
+    color: white;
+    background: #F8A72C;
+
+}
+
+.news-content-nav li:first-child {
+    margin-right: 0.5rem;
+}
+
+.news-content-nav li:last-child {
+    margin-left: 0.5rem;
+}
+.new-content-box{
+    display: none;
+}
+.new-content-box.show{
+    display: block;
+}
+.new-content-box .container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.new-content-box-item{
+    padding-bottom: 0.4rem;
+    margin-top: 0.2rem;
+    border-bottom: 1px solid #999;
+}
+
+.new-content-box-item img{
+    width: 100%;
+    display: block;
+}
+.new-content-box-item  .timer{
+    display: flex;
+    align-items: center
+}
+.new-content-box-item  .timer svg{
+    width: 0.35rem;
+    margin-right: 0.1rem;
+}
+.new-content-box-item  .timer span{
+    font-size: 0.2rem;
+    color:  rgba(153, 153, 153, 1);
+}
+.new-content-box-item h3{
+    font-size: 0.3rem;
+    max-width: 90%;
+}
+.new-content-box-item p{
+    color:rgba(102, 102, 102, 1) ;
+    font-size: 0.14rem;
+    margin-top: 0.2rem;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+@media screen and (min-width: 768px) {
+    .new-content-box-item{
+        width: 110%;
+    }
+}
+
+
+
+
+@media screen and (min-width: 1200px) {
+    .news-banner {
+        height: 300px;
+        background-attachment: fixed;
+        background-position: center center;
+        background-size: cover;
+        background-image: url(/images/news_banner.jpg);
+    }
+    .news-banner-img {
+        display: none;
+    }
+    .news-banner-desc h2 {
+        font-size: 60px;
+    }
+    .news-banner-desc p {
+        margin-top: 10px;
+        font-size: 36px;
+    }
+    .news-content-nav li {
+        width: 100px;
+        height: 40px;
+        border-radius: 20px;
+        font-size: 16px;
+    }
+    .news-content-nav {
+        padding: 30px 0;
+    }
+    
+
+    .new-content-box{
+        padding: 50px 0;
+    }
+    .new-content-box .container{
+        justify-content: flex-start;
+    }
+    .new-content-box-item{
+        width: 360px;
+        margin-bottom: 40px;  
+        cursor: pointer;   
+        margin-right: 20px;  
+    }
+   
+    .new-content-box-item:hover p,
+    .new-content-box-item:hover h3{
+        color: #F8A72C;
+    }
+    .new-content-box-item  .timer{
+        margin-top: 10px;
+    }
+    .new-content-box-item  .timer svg{
+        width: 15px;
+        margin-right:5px;;
+    }
+    .new-content-box-item  .timer span{
+        font-size: 12px;
+    }
+    .new-content-box-item-img{
+        overflow: hidden;   
+    }
+    .new-content-box-item img:hover{
+        transform: scale(1.1);
+    }
+    .new-content-box-item img{
+        transition: all ease .3s;
+    }
+    .new-content-box-item h3{
+        font-size: 20px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        margin: 20px 0;
+    }
+    .new-content-box-item p{
+        font-size: 14px;
+    }
+}
+@media screen and (min-width: 1500px) {
+    .new-content-box-item{
+        width: 380px; 
+    }
+}
