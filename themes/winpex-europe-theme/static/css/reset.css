@@ -22,14 +22,18 @@ dl {
     padding: 0;
 }
 
-html {
-    font-size: 100px;
-}
-
 body {
     font-family: "Microsoft YaHei";
     /* font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif; */
-    font-size: 0.14rem;
+    font-size: 0.24rem;
+}
+
+@media screen and (min-width: 1200px) {
+    body {
+        font-family: "Microsoft YaHei";
+        /* font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif; */
+        font-size: 0.14rem;
+    }
 }
 
 a {
@@ -97,15 +101,6 @@ textarea:focus {
     max-width: 100%;
     height: auto;
 }
-
-
-
-
-
-
-
-
-
 
 /* nav */
 
