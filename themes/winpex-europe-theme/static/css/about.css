@@ -54,7 +54,7 @@
 
 .about-content-nav li.active {
   color: white;
-  background: #f8a72c;
+  background: #05376A;
 }
 
 .about-content-nav li:first-child {
@@ -66,6 +66,7 @@
 }
 
 .about-content-box {
+  text-align: center;
   margin-bottom: 0.5rem;
   display: none;
 }
@@ -93,13 +94,14 @@
 }
 
 .heyme-value-content {
+  margin: 0.5rem 0;
   display: flex;
   flex-wrap: wrap;
 }
 
 .heyme-value-content-item {
   text-align: center;
-  margin-bottom: 0.3rem;
+  margin-bottom: 1.5rem;
   margin-right: 0.1rem;
 }
 .heyme-value-content-item-icon {
@@ -109,13 +111,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 0.02rem solid #f8a72c;
-  margin-left: auto;
-  margin-right: auto;
+  border: 0.02rem solid #05376A;
+  margin: 0.3rem auto;
 }
 .heyme-value-content-item-icon i {
   font-size: 1rem;
-  color: #f8a72c;
+  color: #05376A;
 }
 
 /* .heyme-value-content-item img {
@@ -131,7 +132,6 @@
 .heyme-value-content-item p {
   font-size: 0.16rem;
   max-width: 2.2rem;
-  overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
   -webkit-line-clamp: 3;
@@ -241,7 +241,7 @@
     max-width: 2.4rem;
   }
   .about-content-nav li {
-    width: 100px;
+    /* width: 100px; */
     height: 40px;
     border-radius: 20px;
     font-size: 16px;
@@ -255,7 +255,6 @@
   }
 
   .heyme-culture p {
-    max-width: 550px;
     margin-left: auto;
     margin-right: auto;
     font-size: 16px;
