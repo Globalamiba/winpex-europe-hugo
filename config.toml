@@ -1,10 +1,10 @@
 baseURL = "/"
 languageCode = "en-us"
-title = "heyme_official_web"
-theme = "heyme_off_theme"
+title = "Winpex Europe"
+theme = "winpex-europe-theme"
 paginate = 6
 
-copyright = "宁波黑米信息科技有限公司"
+copyright = "WINPEX EUROPE SERVICES GMBH"
 
 [params]
     dateFormat = "2006年01月02日"
@@ -13,51 +13,23 @@ copyright = "宁波黑米信息科技有限公司"
 
 # Main Menu
 [[menu.main]]
-name = "首页"
+name = "HOME"
 url = ""
 weight = 1
 [[menu.main]]
-name = "关于黑米"
+name = "ABOUT"
 url = "about"
 weight = 2
 [[menu.main]]
-name = "公司产品"
+name = "PRODUCT"
 url = "product"
 weight = 3
 [[menu.main]]
-name = "联系我们"
+name = "CONTACT"
 url = "contact"
 weight = 4
 
 # Footer menu
-[[menu.footer]]
-name = "Über uns"
-URL = "about"
-weight = 1
 
-[[menu.footer]]
-name = "Projekt"
-URL = "project"
-weight = 2
-
-[[menu.footer]]
-name = "Dienstleistung"
-URL = "service"
-weight = 3
-
-[[menu.footer]]
-name = "Preise"
-URL = "pricing"
-weight = 4
-
-[[menu.footer]]
-name = "Häufige Fragen"
-URL = "faq"
-weight = 5
-
-[[menu.footer]]
-name = "Kontakt"
-URL = "contact"
-weight = 6
 
 

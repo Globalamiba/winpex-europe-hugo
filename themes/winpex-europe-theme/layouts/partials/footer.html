@@ -1,0 +1,30 @@
+<footer>
+    <div class="container">
+        <div class="footer-nav">
+
+            <dl>
+                <dt>ABOUT US</dt>
+                <dd><a href="/about?title=culture"><span>Company Culture</span></a></dd>
+                <dd><a href="/about?title=development"><span>Our History</span></a></dd>
+                <dd><a href="/about?title=background"><span>Group Background</span></a></dd>
+            </dl>  
+             <dl>
+                <dt>PRODUCT</dt>
+                <dd><a href="/product"><span>Product Showcase</span></a></dd>
+            </dl>
+            <dl>
+                <dt>PARENT COMPANY</dt>
+                <dd><a href="http://www.winpex-cn.com/" target="_blank"><span>WinpexGroup</span></a></dd>
+            </dl>
+            <dl>
+                <dt class="lastdt">CONTACT</dt>
+                <dd><a href="/contact"><span>Contact Information </span></a></dd>
+            </dl> 
+        </div>
+        <p>© <script>document.write("2023-"+new Date().getFullYear());</script> {{ .Site.Copyright}} </p>
+        
+    </div>
+</footer>
+
+{{ $mainJs := resources.Get "js/default.js" | js.Build "default.js" | minify | fingerprint }}
+<script src="{{ $mainJs.RelPermalink }}"></script>
