@@ -556,7 +556,8 @@
   }
 
   .company-rele-content-item:hover p {
-    background-color: rgba(248, 167, 44, 0.8);
+    background: #05376A;
+    opacity: 0.8;
     transition: all ease 0.5s;
   }
   .company-rele-content-item {
